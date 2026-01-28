@@ -32,14 +32,15 @@ class Rectangle():
         return f"A rectangle with width {self.width} and height {self.height}"
 
     # Create the "area_calculator" method
-    def area_calculator(height, width):
-        
-
-    # YOUR CODE HERE
-
+    def area_calculator(self):
+        return float(self.width * self.height)
+    
 
 
     # Create the "__eq__" method
+    def __eq__(self, other):
+        return self.width == other.width and self.height == other.height
+        
     # 
     # Returns a boolean value
 
